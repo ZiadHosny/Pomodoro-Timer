@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="stopwatch.png" type="image/x-icon">
+  <title>Pomodoro Timer</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: rgb(238, 126, 22);
+      font-size: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+    }
+
+    div {
+      font-size: 30px;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+    }
+
+    .button {
+      width: 170px;
+      height: 30px;
+      margin: 20px;
+      text-align: center;
+      border-radius: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 50px;
+      padding-top: 20px;
+      font-size: 20px;
+      border: 0px;
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+      background-color: gray;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: rgb(238, 126, 22);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pomodoro Timer</h1>
+  <div id="work">Work time</div>
+  <div id="break">Break Time</div>
+  <div class="buttons">
+    <button class="button" onclick="startWork()">Start work</button>
+    <button class="button" onclick="startBreak()">Start Break</button>
+    <button class="button" onclick="resumeWork()">Resume Work</button>
+    <button class="button" onclick="endWork()">End Work</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
